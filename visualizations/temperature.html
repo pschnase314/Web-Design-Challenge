@@ -1,0 +1,67 @@
+<!--set up html/header stuff-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- give the page a title -->
+    <title>Max Temperature vs. Latitude</title>
+    <!-- load bootstrap css stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+
+<!-- build the navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light">
+        <div class="container-fluid"><!--link to home page-->
+          <a class="navbar-brand" href="../index.html">Home Page</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <span class="navbar-text"><!--links to navigate to other pages-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Visualizations
+                      </a>
+                      <ul class="dropdown-menu"><!--dropdown menu-->
+                        <a class="dropdown-item" href="temperature.html">Temperature graph</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity graph</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness graph</a>
+                        <a class="dropdown-item" href="wind.html">Wind Speed graph</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../data.html">Data</a>
+                    </li>
+            
+                  </ul>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <!--content of the individual page-->
+
+      <div class="container text-start">
+        <div class="row">
+          <div class="col-sm"><h1>Max Temperature vs. Latitude</h1></div>
+        </div>
+        <div class="row">
+          <div class="col-sm"><img src="../assets/images/temperature.png"></div>        </div>
+        <div class="row">
+          <div class="col-sm">This graph shows max temperature as a function of latitude.  The temperature appears to depend fairly strongly on latitude.  The highest temperatures are found a bit north of the equator, with temperatures falling in both directions.  This is as expected, given that the measurements were taken during northern hemisphere summer, when the most direct sunlight is found a bit north of the equator.</div>
+        </div>
+      </div>
+
+
+      <!--javascript for bootstrap to function-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+ <!-- end of file -->
+  </body>
+</html>

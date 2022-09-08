@@ -1,0 +1,72 @@
+<!--set up html/header stuff-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- give the page a title -->
+    <title>Home Page</title>
+    <!-- load bootstrap css stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+<!-- build the navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light">
+        <div class="container-fluid"> <!--link to home page-->
+          <a class="navbar-brand" href="#">Home Page</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <span class="navbar-text"> <!--links to navigate to other pages-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="visualizations/comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Visualizations
+                      </a>
+                      <ul class="dropdown-menu"><!--dropdown menu-->
+                        <a class="dropdown-item" href="visualizations/temperature.html">Temperature graph</a>
+                        <a class="dropdown-item" href="visualizations/humidity.html">Humidity graph</a>
+                        <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness graph</a>
+                        <a class="dropdown-item" href="visualizations/wind.html">Wind Speed graph</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="data.html">Data</a>
+                    </li>
+            
+                  </ul>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <!--content of the individual page-->
+      <div class="container text-start">
+        <div class="row">
+          <div class="col-sm-6"><h1>Main Page</h1></div>
+          <div class="col-sm-6"><h1>Visualizations</h1></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">In this project, I am presenting the results from a previous project.  In that project, I looked at the temperature, humidity, cloudiness, and wind speed in over 500 cities around the world using data from the OpenWeatherMap API, plotted using Matplotlib.</div>
+          <div class="col-sm-3"><a href="visualizations/temperature.html"><img src="assets/images/temperature.png" width="200" height="150"></a> </div>
+        <div class="col-sm-3"><a href="visualizations/humidity.html"><img src="assets/images/humidity.png" width="200" height="150"></a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"></div>
+          <div class="col-sm-3"><a href="visualizations/cloudiness.html"><img src="assets/images/cloud.png" width="200" height="150"></a></div>
+          <div class="col-sm-3"><a href="visualizations/wind.html"><img src="assets/images/wind.png" width="200" height="150"></a></div>
+        </div>
+      </div>
+
+
+      <!--javascript for bootstrap to function-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+ <!-- end of file -->
+  </body>
+</html>
